@@ -21,6 +21,7 @@ ENV APP_VERSION="1.15.0" \
     BITNAMI_APP_NAME="fluentd" \
     GEM_HOME="/opt/bitnami/fluentd" \
     PATH="/opt/bitnami/ruby/bin:/opt/bitnami/common/bin:/opt/bitnami/fluentd/bin:$PATH"
+RUN fluent-gem install fluent-plugin-search
 
 EXPOSE 5140 24224
 
